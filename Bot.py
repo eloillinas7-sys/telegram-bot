@@ -46,6 +46,6 @@ app.add_handler(CommandHandler("start", subscribe))
 app.add_handler(CommandHandler("picks", picks_today))
 
 job_queue = app.job_queue
-job_queue.run_daily(daily_picks, time=(9,0,0))
+job_queue.run_daily(daily_picks, time=time(9,0))
 
 app.run_polling()
