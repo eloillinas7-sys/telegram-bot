@@ -1,6 +1,8 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
-from datetime import time
+from datetime import datetime
+
+hoy = datetime.now().strftime("%d de %B de %Y")
 import random
 import os
 
